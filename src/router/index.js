@@ -1,27 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../views/Home.vue'
-import store from '../store'
+import {getRoutes} from '../utlis'
 
 Vue.use(Router)
+
+let routes = getRoutes(require.context('./', false, /\.js$/), './index.js')
 
 export default new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [
+        // 匹配到不存在的路由重定向的用户首页
         {
-            path: '/',
-            name: 'home',
-            component: Home
+            path: '*',
+            redirect: '/user',
+            meta: {}
         },
-        {
-            path: '/about',
-            name: 'about',
-            // router level code-splitting
-            // this generates a separate chunk (about.[hash].js) for this router
-            // which is lazy-loaded when the router is visited.
-            component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-        }
+        ...routes
     ],
-    store
 })
