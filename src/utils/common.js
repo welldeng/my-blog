@@ -1,3 +1,4 @@
+// 收集路由
 const getRoutes = (context, ignore) => {
     const children = []
     context.keys().forEach(key => {
@@ -16,5 +17,18 @@ const getRoutes = (context, ignore) => {
     return children
 }
 
+// 收集md文件
+const getMarkDownList = (context) => {
+    const children = []
+    context.keys().forEach(key => {
+        let content = context(key)
+        children.push({
+            name: key.substring(2, key.length - 3),
+            content: content.default,
+        })
+    })
+    return children
+}
 
-export {getRoutes}
+
+export {getRoutes, getMarkDownList}

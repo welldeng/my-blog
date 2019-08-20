@@ -7,7 +7,7 @@ module.exports = {
         config.module
             .rule('markdown')
             .test(/\.md$/)
-            .use('./markdown-loader/loader')
+            .use('./markdown-loader')
             .loader('./markdown-loader/index.js')
             .end()
     }
