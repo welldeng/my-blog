@@ -33,10 +33,14 @@
         flex-wrap: wrap;
         width: 100%;
         height: 40vh;
-        background-color: aqua;
+        background-image: url('~@/assets/img/pokemon-bg.jpeg');
+        background-size: 100% 100%;
+        background-blend-mode: color;
+
         .avatar {
             width: 200px;
             height: 200px;
+
             img {
                 object-fit: cover;
                 width: 100%;
@@ -44,6 +48,7 @@
                 border-radius: 50%;
             }
         }
+
         .avatar-info {
             width: 100%;
             text-align: center;
@@ -58,9 +63,12 @@
         flex-wrap: wrap;
         width: 100%;
         height: 60vh;
+
         li {
             width: 50%;
             height: 20vh;
+            background-image: url('~@/assets/img/pikaqiu1.jpg');
+            background-size: 100% 100%;
         }
     }
 </style>
