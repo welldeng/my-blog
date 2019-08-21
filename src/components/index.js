@@ -1,0 +1,27 @@
+import bus from '../utils/bus'
+
+// 组件
+import navBar from './nav-bar'
+
+// 样式
+import '../plugins/vant.js'
+import '../assets/less/app.less'
+
+const components = [
+    navBar
+]
+
+const setPrototype = (Vue) => {
+    Vue.prototype.$bus = bus
+}
+
+const install = (Vue) => {
+    components.filter(v => typeof v !== 'function').forEach(v => Vue.component(v.name, v))
+    setPrototype(Vue)
+}
+
+// if (typeof window !== 'undefined' && window.Vue) {
+//     install(window.Vue)
+// }
+
+export default install

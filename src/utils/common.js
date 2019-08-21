@@ -21,10 +21,8 @@ const getRoutes = (context, ignore) => {
 const getMarkDownList = (context) => {
     const children = []
     context.keys().forEach(key => {
-        let content = context(key)
         children.push({
-            name: key.substring(2, key.length - 3),
-            content: content.default,
+            title: key.substring(2, key.length - 3),
         })
     })
     return children

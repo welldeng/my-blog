@@ -1,12 +1,14 @@
 <template>
     <div>
-        <div>Blog-List</div>
-        <ul>
-            <li v-for="(item, index) in markdownList" :key="index">
-                <h3>{{item.name}}</h3>
-                <div>
-                    {{item.content}}
-                </div>
+        <nav-bar title="文章列表"
+                 left-text="返回"
+                 left-arrow
+                 is-fix
+                 @click-left="goBack">
+        </nav-bar>
+        <ul class="article-list">
+            <li v-for="(item, index) in markdownList" :key="index" @click="getContent(item)">
+                {{item.title}}
             </li>
         </ul>
     </div>
@@ -21,10 +23,24 @@
             return {
                 markdownList: markdowns
             }
-        }
+        },
+        methods: {
+            getContent(item) {
+                this.$router.push(`/blog/content/${item.title}`)
+            },
+            goBack() {
+                this.$router.push('/user')
+            },
+        },
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+    .article-list {
+        li {
+            font-size: 32px;
+            padding: 20px;
+            border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
+        }
+    }
 </style>

@@ -9,7 +9,7 @@ export default [
         component: blogList,
     },
     {
-        path: '/blog/content/:id',
+        path: '/blog/content/:url',
         name: 'blog-content',
         component: blogContent,
     }
