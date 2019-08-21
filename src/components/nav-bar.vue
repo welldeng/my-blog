@@ -36,11 +36,13 @@
 
 <style scoped lang="less">
     .nav-bar {
+        z-index: 10;
         display: flex;
         width: 100%;
         height: 80px;
         line-height: 80px;
         border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
+        background-color: #fff;
         .nav-bar-icon {
             flex-basis: 20%;
             display: inline-flex;

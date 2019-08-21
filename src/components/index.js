@@ -2,9 +2,10 @@ import bus from '../utils/bus'
 
 // 组件
 import navBar from './nav-bar'
+import '../plugins/vant.js'
 
 // 样式
-import '../plugins/vant.js'
+import '../assets/less/reset.less'
 import '../assets/less/app.less'
 
 const components = [

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="blog-list-box">
         <nav-bar title="文章列表"
                  left-text="返回"
                  left-arrow
@@ -37,10 +37,15 @@
 
 <style scoped lang="less">
     .article-list {
+        padding-bottom: 50px;
+        background-color: #f8f8f8;
+
         li {
             font-size: 32px;
             padding: 20px;
             border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
+            margin-bottom: 20px;
+            background-color: #fff;
         }
     }
 </style>
