@@ -1,7 +1,7 @@
 module.exports = {
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-manage/' : '/',
     configureWebpack: {
-        plugins: [
-        ]
+        plugins: []
     },
     chainWebpack: config => {
         config.module
