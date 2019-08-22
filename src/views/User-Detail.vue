@@ -176,7 +176,7 @@
     }
 
     .user-experience {
-        font-size: 28px;
+        font-size: 24px;
         word-break: break-word;
         background-color: rgba(255, 255, 255, 0.85);
 
