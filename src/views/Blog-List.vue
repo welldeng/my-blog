@@ -37,15 +37,15 @@
 
 <style scoped lang="less">
     .article-list {
-        padding-bottom: 50px;
-        background-color: #f8f8f8;
-
+        background: url('~@/assets/img/pkm-bg.jpg') fixed;
+        background-size: contain;
+        min-height: 100vh;
+        font-weight: 500;
         li {
-            font-size: 32px;
-            padding: 20px;
+            font-size: 24px;
+            padding: 30px;
             border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
-            margin-bottom: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.85);
         }
     }
 </style>

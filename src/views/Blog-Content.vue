@@ -39,27 +39,27 @@
 
 <style scoped lang="less">
     .article-box {
-        padding: 0 64px;
-        margin-top: 32px;
+        padding: 0 48px;
+        margin-top: 24px;
         /*background-color: #f4f5f5;*/
     }
 </style>
 
 <style lang="less">
     .genFs(@x) {
-        font-size: (7 - @x) * 8px;
+        font-size: (7 - @x) * 6px;
         color: #333;
         line-height: 1.5;
-        margin-top: 35px;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
+        margin-top: 26px;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
         border-bottom: 1px solid #ececec;
         font-weight: 500;
     }
 
     .article-title {
-        font-size: 64px;
-        margin-bottom: 32px;
+        font-size: 48px;
+        margin-bottom: 12px;
         font-weight: 700;
         line-height: 1.5;
     }
@@ -68,7 +68,7 @@
         background-color: #ffffff;
         line-height: 1.75;
         overflow-x: hidden;
-
+        font-size: 24px;
         h1 {
             .genFs(1)
         }
@@ -94,7 +94,7 @@
         }
 
         ul, ol {
-            padding-left: 40px;
+            padding-left: 30px;
         }
 
         ul {
@@ -105,12 +105,12 @@
             list-style: decimal;
 
             li {
-                padding-left: 16px;
+                padding-left: 12px;
             }
         }
 
         p {
-            margin: 28px 0;
+            margin: 20px 0;
         }
 
         a {
@@ -123,7 +123,7 @@
         }
 
         pre {
-            margin: 28px 0;
+            margin: 20px 0;
             position: relative;
             background-color: #f8f8f8;
         }
@@ -132,14 +132,14 @@
             display: block;
             word-break: normal;
             overflow-x: auto;
-            padding: 32px 16px;
+            padding: 24px 12px;
             color: #333333;
         }
 
         code {
             background-color: #fff5f5;
             color: #ff502c;
-            font-size: 28px;
+            font-size: inherit;
             padding: 2px 10px;
         }
 
@@ -153,7 +153,7 @@
 
          table {
             display: inline-block!important;
-            font-size: 32px;
+            font-size: 24px;
             width: auto;
             max-width: 100%;
             overflow: auto;
@@ -171,8 +171,8 @@
         }
 
          td, th {
-            padding: 32px 20px;
-            line-height: 64px
+            padding: 24px 15px;
+            line-height: 48px
         }
 
          td {

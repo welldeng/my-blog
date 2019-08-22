@@ -1,17 +1,17 @@
 <template>
-    <div>
-        <div class="user-info-box">
-            <div class="avatar"><img src="../assets/img/avatar.jpg" alt="头像"></div>
-            <div class="avatar-info">xxxxxxx</div>
-        </div>
-        <ul class="tab-box">
-            <router-link tag="li" to="/user/detail">个人信息</router-link>
-            <router-link tag="li" to="/blog/list">文章目录</router-link>
-            <router-link tag="li" to="/blog/list">技术书籍</router-link>
-            <router-link tag="li" to="/blog/list">收藏文章</router-link>
-            <router-link tag="li" to="/blog/list">生活记录</router-link>
-            <router-link tag="li" to="/blog/list">其他</router-link>
-        </ul>
+    <div class="user-contain">
+        <router-link class="user-info-box" tag="li" to="/user/detail">
+            个人信息
+        </router-link>
+        <router-link class="user-info-box" tag="li" to="/blog/list">
+            文章列表
+        </router-link>
+        <router-link class="user-info-box" tag="li" to="/blog/list">
+            收藏网站
+        </router-link>
+        <router-link class="user-info-box" tag="li" to="/blog/list">
+            前端书籍
+        </router-link>
     </div>
 </template>
 
@@ -26,49 +26,30 @@
 </script>
 
 <style scoped lang="less">
-    .user-info-box {
+    .user-contain {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
-        width: 100%;
-        height: 40vh;
-        background-image: url('~@/assets/img/pokemon-bg.jpeg');
-        background-size: 100% 100%;
-        background-blend-mode: color;
+        padding: 20px 0;
+        .user-info-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80vw;
+            height: 50vw;
+            margin: 20px 0;
+            background-image: url('~@/assets/img/pokemon-bg.jpg');
+            background-size: 100% 100%;
+            background-blend-mode: color;
+            border-radius: 20px;
+            box-shadow: 0 8px 12px #a5d1fe;
 
-        .avatar {
-            width: 200px;
-            height: 200px;
-
-            img {
-                object-fit: cover;
+            li {
                 width: 100%;
                 height: 100%;
-                border-radius: 50%;
             }
         }
-
-        .avatar-info {
-            width: 100%;
-            text-align: center;
-            font-size: 32px;
-        }
     }
 
-    .tab-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 60vh;
-
-        li {
-            width: 50%;
-            height: 20vh;
-            background-image: url('~@/assets/img/pikaqiu1.jpg');
-            background-size: 100% 100%;
-        }
-    }
 </style>

@@ -39,8 +39,8 @@
         z-index: 10;
         display: flex;
         width: 100%;
-        height: 80px;
-        line-height: 80px;
+        height: 60px;
+        line-height: 60px;
         border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
         background-color: #fff;
         .nav-bar-icon {
@@ -48,11 +48,11 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            font-size: 32px;
+            font-size: 24px;
             color: #1889f9;
         }
         .nav-bar-title {
-            font-size: 32px;
+            font-size: 24px;
             flex-basis: 60%;
             text-align: center;
         }
@@ -61,6 +61,6 @@
         position: fixed;
     }
     .nav-bar-fix-box {
-        height: 80px;
+        height: 60px;
     }
 </style>
