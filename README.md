@@ -1,6 +1,10 @@
 # my-blog
 
-随便写着玩的blog，请用手机打开
+写着玩的blog，请用手机打开
+
+后期添加pc端适配
+
+接入后台数据
 
 ## Project setup
 ```
