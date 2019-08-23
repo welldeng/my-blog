@@ -1,4 +1,6 @@
-# vue-project
+# my-blog
+
+随便写着玩的blog，请用手机打开
 
 ## Project setup
 ```
